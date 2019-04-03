@@ -44,7 +44,7 @@ const transform = lct(localSamples, wgs84Samples);
 
 var localPoint = [];
 const local = transform.toLocal(localPoint, [ 121.38365648516356, 31.15163789378666 ]);
-console.log(local);
+console.log(localPoint);
 var wgs84Point = [];
 const wgs84 = transform.fromLocal(wgs84Point, [ -7961.222764147446, -9289.597782096651 ]);
 console.log(wgs84Point);
